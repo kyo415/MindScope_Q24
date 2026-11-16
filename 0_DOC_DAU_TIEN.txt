@@ -1,0 +1,10 @@
+MINDSCOPE Q24 - Huong dan khoi dong
+
+1. Giai nen ZIP.
+2. Vao thu muc MindScope_Q24_GiaoDien_DaSua bang File Explorer cua Windows.
+3. Chay CHAY_Q24_WINDOWS.bat (nhap dup trong Windows File Explorer).
+4. Khi may chu chay, truy cap http://127.0.0.1:5055/
+KHONG su dung Live Server/Go Live, KHONG mo truc tiep templates/index.html.
+
+Neu bi loi Python: mo cmd/Terminal tai thu muc va chay CHAY_Q24_WINDOWS.bat de xem log.
+Ung dung su dung Python 3.11-3.14 64-bit va 3 model Random Forest trong models.

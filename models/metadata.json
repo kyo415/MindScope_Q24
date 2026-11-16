@@ -1,0 +1,83 @@
+{
+  "description": "Dự đoán Q24 = 1 (Có) từ 10 câu hỏi khác; nghiên cứu minh họa, không dùng cho cá nhân.",
+  "feature_columns": [
+    "Q1",
+    "Q2",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q27"
+  ],
+  "target": "Q24",
+  "target_mapping": {
+    "1": "Có",
+    "2": "Không"
+  },
+  "trained_at_utc": "2026-11-03T07:12:30.644973+00:00",
+  "sklearn_version": "1.8.0",
+  "test_size": 0.2,
+  "random_state": 42,
+  "country_models": {
+    "Bhutan": {
+      "algorithm": "Random Forest (balanced_subsample)",
+      "model_file": "q24_bhutan_randomforest.joblib",
+      "train_rows": 5989,
+      "test_rows": 1498,
+      "test_positive_rows": 172,
+      "metrics": {
+        "accuracy": 0.775,
+        "precision": 0.2381,
+        "recall": 0.436,
+        "f1": 0.308,
+        "roc_auc": 0.7
+      },
+      "total_rows": 7576,
+      "labeled_rows": 7487,
+      "missing_target_rows": 89,
+      "positive_rows": 862,
+      "negative_rows": 6625
+    },
+    "Morocco": {
+      "algorithm": "Random Forest (balanced_subsample)",
+      "model_file": "q24_morocco_randomforest.joblib",
+      "train_rows": 5141,
+      "test_rows": 1286,
+      "test_positive_rows": 206,
+      "metrics": {
+        "accuracy": 0.7691,
+        "precision": 0.3488,
+        "recall": 0.5097,
+        "f1": 0.4142,
+        "roc_auc": 0.7376
+      },
+      "total_rows": 6745,
+      "labeled_rows": 6427,
+      "missing_target_rows": 318,
+      "positive_rows": 1031,
+      "negative_rows": 5396
+    },
+    "UAE": {
+      "algorithm": "Random Forest (balanced_subsample)",
+      "model_file": "q24_uae_randomforest.joblib",
+      "train_rows": 2696,
+      "test_rows": 674,
+      "test_positive_rows": 98,
+      "metrics": {
+        "accuracy": 0.8101,
+        "precision": 0.3958,
+        "recall": 0.5816,
+        "f1": 0.4711,
+        "roc_auc": 0.798
+      },
+      "total_rows": 5849,
+      "labeled_rows": 3370,
+      "missing_target_rows": 2479,
+      "positive_rows": 492,
+      "negative_rows": 2878
+    }
+  }
+}

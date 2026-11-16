@@ -1,0 +1,14 @@
+MINDSCOPE Q24 - DA SUA GIAO DIEN
+
+1. Dong Terminal cua phien ban cu dang chay.
+2. Mo dung thu muc MindScope_Q24_GiaoDien_DaSua trong File Explorer.
+3. Nhan dup CHAY_Q24_WINDOWS.bat (khong nhan dup trong VS Code).
+4. Mo Chrome: http://127.0.0.1:5055
+5. Nhan Ctrl+0 (Zoom 100%). Nhan Ctrl+Shift+R tai lai trang.
+
+TRANG CU CO THE VAN CHAY O CONG 5000: KHONG SU DUNG CONG 5000!
+Chua can cai lai Python neu may da cai 3.13 x64 thanh cong.
+Chu y: can chay server Python de mo API va 10 cau hoi.
+
+Cac file CSS va JS van duoc giu trong static. Ban HTML duoc tich hop CSS/JS
+de tranh mat giao dien khi trinh duyet khong tai duoc tep static.

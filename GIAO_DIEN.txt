@@ -1,0 +1,17 @@
+MINDSCOPE Q24 - GIAO DIEN VUON AN YEN
+
+BANG MAU:
+- Nen kem am: #F8F7F1
+- Xanh la tram (mau chu dao): #3D624F
+- Xanh la nhat: #E9F1E8
+- Dat nung diu: #B3775E
+- Chu dam: #2C4035
+
+Chi thay doi giao dien CSS, favicon va dong chu gioi thieu.
+Mau sac khong co tac dung dieu tri; muc tieu la giam cam giac giao dien lanh va gay choi.
+Toan bo mo hinh Random Forest, API, 10 cau hoi, SQLite giu nguyen.
+
+De doi mau: static/css/theme-serene.css
+HTML: templates/index.html
+Chay Windows: CHAY_Q24_WINDOWS.bat
+Website: http://127.0.0.1:5055

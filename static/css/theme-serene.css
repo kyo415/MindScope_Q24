@@ -1,0 +1,224 @@
+/*
+ * MINDSCOPE — VƯỜN AN YÊN / BOTANICAL CALM
+ * Sage · warm ivory · muted terracotta.
+ * Tông màu dịu, trung tính, không dùng màu để phân loại sức khỏe tâm lý.
+ * Giữ tương phản đọc được, trạng thái focus rõ, hỗ trợ reduced-motion.
+ * Đây là lớp giao diện; không can thiệp mô hình học máy / API / cơ sở dữ liệu.
+ */
+:root {
+  --ink: #2C4035;
+  --muted: #62766B;
+  --purple: #3D624F; /* alias giữ tương thích các thành phần gốc */
+  --purple-dark: #2F5040;
+  --mint: #D6AA89;
+  --line: #E3E8DD;
+  --page: #F8F7F1;
+  --shadow: 0 12px 40px rgba(55, 73, 57, .055);
+  --radius: 22px;
+  --sage: #3D624F;
+  --sage-deep: #2E4D3D;
+  --sage-light: #E9F1E8;
+  --apricot: #B3775E;
+  --ivory: #FFFEFB;
+}
+html { color-scheme: light; }
+body { background: var(--page); color: var(--ink); }
+button:focus-visible, input:focus-visible, select:focus-visible,
+a:focus-visible, summary:focus-visible { outline: 3px solid #BA8B62; outline-offset: 3px; }
+::selection { color: #24392D; background: #D8E7D4; }
+.site-header, .site-footer { background: var(--ivory); border-color: #EBEBE1; }
+.logo-emblem {
+  background: linear-gradient(135deg,#3D6651,#718D74);
+  color:#fffdf7;
+  border-radius: 16px;
+  box-shadow: 0 8px 19px #3F65452D;
+}
+.logo-word b, .site-footer strong:after { color: #AC7155; }
+.header-type { color: #65786D; }
+.header-link { border-color: #DDE5D9; background: #FFFDF8; color:#385646; }
+.header-link:hover { background:#EDF2E9; color:#2D513F; }
+.hero {
+  color:#2E4A3B;
+  border:1px solid #E0E8DC;
+  background:
+    radial-gradient(ellipse at 84% 20%,rgba(236,204,175,.5),transparent 36%),
+    radial-gradient(ellipse at 78% 100%,rgba(179,204,181,.28),transparent 46%),
+    linear-gradient(110deg,#EDF2E9 0%,#F5F3E8 54%,#E5ECE2 100%);
+  box-shadow:0 23px 51px rgba(64,79,57,.08);
+}
+.hero:after { opacity:.27; background-image:radial-gradient(#779986 1px,transparent 1px); }
+.eyebrow { color:#527461; letter-spacing:1.8px; }
+.eyebrow-dot { background:#AB7759; box-shadow:0 0 0 5px #AB77592A; }
+.hero h1 { color:#2E4B3A; }
+.hero h1 span {
+  color:#9D624D;
+  background:none;
+  -webkit-text-fill-color:currentColor;
+}
+.hero-lead { color:#53675B; }
+.hero-lead strong { color:#2C4939; }
+.hero-chips>span { color:#405C4C; background:#FFFFFF88; border-color:#D2DFD0; }
+.chip-icon { color:#A56A50; }
+.hero-orbit { border-color:#76978232; }
+.hero-cube {
+  background:linear-gradient(145deg,#FFFFFBEA,#EFF2E8DB);
+  border:1px solid #FFFFFFCC;
+  color:#355846;
+  box-shadow:0 20px 44px #496A4C21;
+  backdrop-filter:blur(12px);
+}
+.hero-cube-sub { color:#6A816F; }
+.hero-cube-title { color:#355846; }
+.hero-cube-title span { color:#AF745A; }
+.hero-cube-bottom { color:#698275; }
+.hero-satellite { color:#A17F69; }
+.sat-three { color:#6C9374; }
+.status-dot { background:#648D70; box-shadow:0 0 0 4px #779E7625; }
+.sidebar-card, .survey-card, .result-card, .receipt-lookup {
+  border-color:#E5EADF;
+  background:var(--ivory);
+  box-shadow:var(--shadow);
+}
+.section-kicker { color:#718377; }
+.section-kicker.purple { color:#426950; }
+.kicker-bar { background:#A6755A; }
+.journey:before { border-color:#DEE8DC; }
+.journey-icon { color:#7A8D80; background:#EFF1E9; }
+.journey-item p { color:#74877B; }
+.journey-item.active .journey-icon {
+  background:linear-gradient(140deg,#4C725D,#3C604C);
+  box-shadow:0 7px 16px #3B604C30;
+}
+.journey-item.done .journey-icon { color:#38684B; background:#E2EEDD; }
+.journey-check { color:#436F51; }
+.dark-card {
+  color:#2F4C3D;
+  border-color:#E8DFC9;
+  background:
+    radial-gradient(circle at 110% -10%,#F9FAF1 0,transparent 45%),
+    linear-gradient(140deg,#F0EBDC,#EDE9DA);
+}
+.dark-card:after { border-color:#83927B20; box-shadow:0 0 0 35px #9EA68D0C,0 0 0 75px #A1A6890B; }
+.section-kicker.light { color:#6D806E; }
+.section-kicker.light .kicker-bar { background:#AD745A; }
+.dark-card h2 { color:#324D3E; }
+.dark-card p { color:#5E6F61; }
+.dark-card p strong { color:#385642; }
+.research-facts { border-color:#AFBCA955; }
+.research-facts span { color:#6F806F; }
+.privacy-card { background:#EAF2E9; border:1px solid #D9E7D7; }
+.privacy-mark { color:#3A7657; background:#D7E8D8; }
+.privacy-card p { color:#587060; }
+.survey-header { border-color:#E7EBE3; }
+.survey-symbol, .step-heading-icon, .lookup-symbol { color:#537B5A; background:#EBF2E8; }
+.live-pill { color:#356648; background:#E8F2E8; }
+.target-banner { background:#F7F2E8; border-color:#EAE1D0; }
+.target-label { color:#496C51; border-color:#DDD3C1; }
+.target-label span { color:#8C836F; }
+.target-banner p { color:#3E5648; }
+.target-info { color:#827F6E; }
+.mandatory { color:#A95843; }
+.country-select-row p,.model-caption { color:#748377; }
+.select-shell select { border-color:#DCE5DA; background:#FFFFFF; color:#324B3A; }
+.select-shell>span { color:#627A66; }
+.progress-labels,.step-tab.active { color:#3F684E; }
+.progress-labels strong { color:#6D8072; }
+.progress-track { background:#E8ECE4; }
+.progress-bar { background:linear-gradient(90deg,#628567,#B5C79D); }
+.step-tab { color:#79867B; }
+.step-tab:before { background:#D4DED2; }
+.step-tab.active:before { background:#4D7955; box-shadow:0 0 0 3px #5D8B5B21; }
+.step-tab.done,.step-tab.done:before { color:#446B4E; }
+.step-tab.done:before { background:#527C5A; }
+.loading-message { background:#F3F4EE; color:#697E6F; }
+.step-heading { border-color:#EAEDE6; }
+.step-heading p,.question-help,.form-help { color:#718276; }
+.question { border-color:#EAEEE8; }
+.question.invalid { box-shadow:0 0 0 2px #C88972; }
+.question-code { color:#46664D; background:#EAF0E6; }
+.option { border-color:#DEE6DC; background:#FFFFFD; color:#3F5547; }
+.option:hover { background:#F3F7F0; border-color:#9CB6A0; }
+.option:has(input:checked) {
+  color:#2D5540;
+  background:#EBF3E8;
+  border-color:#63926D;
+  box-shadow:0 0 0 1px #719D7729;
+}
+.option input { border-color:#9DAC9D; }
+.option input:checked { border-color:#406E51; }
+.option input:focus-visible { outline-color:#BA8B62; }
+.consent-panel { background:#F1F6F0; border-color:#D8E6D8; }
+.consent-icon { background:#DDECDC; color:#456F52; }
+.consent-top p,.consent-label { color:#5A7765; }
+.consent-label input { accent-color:#3D6950; }
+.form-error { color:#9B453E; background:#FCF0EA; border-color:#E6B9A7; }
+.form-footer { border-color:#EAEDE6; }
+.button { border-radius:12px; }
+.button-primary {
+  color:#FFFFFF;
+  background:linear-gradient(115deg,#476D54,#365C46);
+  box-shadow:0 7px 16px #466F4D2E;
+}
+.button-primary:hover:not(:disabled) { background:linear-gradient(115deg,#52785E,#3B634B); }
+.button-light { background:#FFFFFC; border-color:#DDE5DA; color:#45624E; }
+.button-light:hover:not(:disabled) { background:#EFF5EB; }
+.button-outline { color:#385E48; background:#FDFCF8; border-color:#CADDCB; }
+.button-outline:hover:not(:disabled) { background:#EDF4EA; }
+.afterword { color:#617466; background:#EEF1E9; }
+.afterword span { color:#977052; }
+.afterword strong { color:#3E604A; }
+.result-flag { color:#496E53; }
+.result-year,.result-explanation { color:#718374; }
+.result-highlight {
+  border-color:#DAE7D8;
+  background:linear-gradient(110deg,#EAF3E9,#F7F1E5);
+}
+.result-orb { color:#406D50; background:linear-gradient(135deg,#D7E8D4,#F5E0C8); }
+.result-overline { color:#617869; }
+.result-highlight strong { color:#325943; }
+.result-small { color:#5F7765; }
+.score-box,.metrics-section { border-color:#E0E8DF; }
+.score-title p { color:#75867A; }
+.score-title>strong { color:#3D664D; }
+.score-meter { background:#E3ECE2; }
+.score-meter>div { background:linear-gradient(90deg,#9EBFA1,#447153); }
+.threshold { border-color:#43564680; }
+.score-ends { color:#6D8171; }
+.metrics-section summary { color:#365342; }
+.metric-row>div { background:#F0F4ED; }
+.metric-row span { color:#6B806F; }
+.metric-row b { color:#386349; }
+.metrics-section p { color:#6F8073; }
+.caution-box { background:#F9F0E5; border-color:#EBD8C0; color:#7E604A; }
+.caution-box strong { color:#755039; }
+.receipt-panel { border-color:#CBE1CC; background:#F1F7EF; }
+.receipt-panel strong { color:#345E42; }
+.receipt-panel p,.receipt-status { color:#57745E; }
+.receipt-field code { border-color:#D5E2D2; }
+.text-danger { color:#9B4E43; }
+.receipt-lookup { border-color:#E2E8DC; }
+.lookup-copy p { color:#708273; }
+.lookup-form input { border-color:#DDE5D9; background:#FFFEFA; }
+.lookup-output { color:#3D5442; background:#F2F5EE; }
+.lookup-output button { color:#914C43; border-color:#E6D6D0; }
+.site-footer p,.site-footer .footer-inner>span { color:#697D6D; }
+/* Mobile vẫn dùng bố cục đáp ứng gốc; tránh thay đổi bố cục do cập nhật màu. */
+@media print {
+  body { background:white!important; color:#172619!important; }
+  .result-highlight, .score-meter { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+}
+
+
+/* Stable rendering + gentle illustration: no enormous decorative circles. */
+.logo-emblem svg { display:block; width:32px; height:32px; max-width:100%; }
+.hero-orbit { display:none !important; }
+.hero-visual { width:310px; height:290px; right:12px; top:5px; }
+.hero-cube { top:51px; right:50px; }
+.sat-one { top:27px; left:53px; }
+.sat-two { bottom:25px; right:18px; }
+.sat-three { bottom:36px; left:20px; }
+@media (max-width:820px){.hero-visual{right:-110px;opacity:.15}}
+@media (max-width:570px){.hero-visual{display:none}}
+/* Clear guide if index.html was opened directly instead of through Python. */
+.local-file-warning {background:#F9F0E5; color:#684F3E; border:1px solid #E5D2B9; border-radius:15px; padding:17px 20px; margin-top:18px; font-size:14px; line-height:1.7;}
+.local-file-warning strong{display:block;font-size:17px;margin-bottom:6px;}
